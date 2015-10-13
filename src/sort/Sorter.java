@@ -2,8 +2,7 @@ package sort;
 
 public class Sorter {
 	
-	public static int[] sort(int[] toBeSorted) {
-		
+	public static int[] sort(int[] toBeSorted) {	
 		int counter;
 		for (int i = 0; i<toBeSorted.length; i++) {
 			counter = indexOfMin(toBeSorted, i);
@@ -11,7 +10,6 @@ public class Sorter {
 			swap(toBeSorted, i, counter);
 		}
 		return toBeSorted;
-	
 	}
 
 	private static void swap(int[] toBeSorted, int firstIndex, int secondIndex) {
@@ -19,7 +17,6 @@ public class Sorter {
 		toBeSorted[firstIndex] = toBeSorted[secondIndex];
 		toBeSorted[secondIndex] = temp;
 	}
-	
 	
 	private static int indexOfMin(int[] toBeSorted, int startIndex) {
 		int minVal = toBeSorted[startIndex];
@@ -33,10 +30,4 @@ public class Sorter {
 	    } 
 	    return minIndex;
 	}
-	
-	
-	
-	
-	
-	
 }

@@ -4,7 +4,7 @@ import binarysearch.BinarySearch;
 public class TestSorter {
 
 	public static void main(String[] args) {
-		int[] testArray = {7, 4, 5, 2, 3, 6, 1};
+		int[] testArray = {7, 4, 5, 2, 3, 6, 1, 8, 10, 9};
 
 		Sorter.sort(testArray);
 		
@@ -13,7 +13,7 @@ public class TestSorter {
 			
 		}
 		System.out.println();
-		System.out.println(BinarySearch.searcher(Sorter.sort(testArray), 2));
+		System.out.println(BinarySearch.searcher(Sorter.sort(testArray), 9));
 		
 		
 	}

@@ -9,11 +9,11 @@ public class BinarySearch {
 		for (int i = 0; i<toBeSearched.length; i++) {
 			int halfArray = (int) (min+max)/2;
 			if (toBeFound < toBeSearched[halfArray]) {
-				max = toBeSearched[halfArray];
+				max = halfArray-1;
 			} else if (toBeFound > toBeSearched[halfArray]) {
-				min = toBeSearched[halfArray];
+				min = halfArray+1;
 			} else {
-				index = toBeSearched[halfArray];
+				index = halfArray;
 			}
 			
 		}
