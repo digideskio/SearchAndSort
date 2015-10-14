@@ -15,7 +15,6 @@ public class BinarySearch {
 			} else {
 				index = halfArray;
 			}
-			
 		}
 		return index;
 		
